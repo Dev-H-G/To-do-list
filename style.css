@@ -1,0 +1,141 @@
+    body {
+        background-color: chocolate;
+    }
+    
+    .head {
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .add-filter {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .karha {
+        display: flex;
+    }
+    
+    .karha input {
+        outline: none;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+        border: none;
+    }
+    
+    .add {
+        border-top-right-radius: 7px;
+        border: none;
+        color: white;
+        border-bottom-right-radius: 7px;
+        background-color: darkgreen;
+        font-size: 25px;
+    }
+    
+    .add:hover {
+        background-color: green;
+    }
+    
+    .filter select {
+        padding: 6.5px 5px;
+        border-radius: 7px;
+        height: 30px;
+        border: none;
+        font-size: 17px;
+    }
+    
+    .filter option {
+        border-radius: 7px;
+    }
+    
+    .works {
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    
+    .works :nth-child() {
+        background-color: grey;
+        color: honeydew;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+    
+    .check-icon {
+        height: 30px;
+        width: 30px;
+        border: none;
+    }
+    
+    .trash-icon {
+        height: 30px;
+        border: none;
+    }
+    
+    .todo {
+        list-style: none;
+        width: 300px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px auto;
+    }
+    
+    .todo li {
+        padding: 8px 5px;
+        flex: 1;
+    }
+    
+    .doings button {
+        background-color: white;
+        border: none;
+        direction: ltr;
+        cursor: pointer;
+    }
+    
+    .doings {
+        border-radius: 8px;
+    }
+    
+    .todos {}
+    
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background-image: none;
+        border-radius: 10px;
+        color: #c4447a;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        width: 12rem;
+    }
+    
+    .select {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .select::after {
+        content: "\25BC";
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        background: #c4447a;
+        cursor: pointer;
+        pointer-events: none;
+    }
