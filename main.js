@@ -24,12 +24,12 @@ function addWorksUl(event) {
 
     const checkIcon = document.createElement("button");
     checkIcon.classList.add("completed-btn");
-    checkIcon.innerHTML = "+";
+    checkIcon.innerHTML = "<i class='fas fa-check'></i>";
     mainContainer.appendChild(checkIcon);
 
     const trashIcon = document.createElement("button");
     trashIcon.classList.add("trash-btn");
-    trashIcon.innerHTML = "-";
+    trashIcon.innerHTML = "<i class='fas fa-trash'></i>";
 
     mainContainer.appendChild(trashIcon);
     mainContainer.style.display = "flex";
@@ -40,8 +40,10 @@ function addWorksUl(event) {
 function deleteCompletedTodo(event) {
     const item = event.target;
 
+
     if (item.classList[0] === "trash-btn") {
         const todo = item.parentElement;
+        console.log(todo);
         removeLocalStorage(todo);
         todo.remove();
     }
@@ -110,7 +112,7 @@ function getTodos() {
         todos = JSON.parse(localStorage.getItem("todos"));
     }
     todos.forEach(function(todo) {
-        event.preventDefault();
+
         const mainContainer = document.createElement("div")
         mainContainer.classList.add("todo");
 
@@ -123,12 +125,12 @@ function getTodos() {
 
         const checkIcon = document.createElement("button");
         checkIcon.classList.add("completed-btn");
-        checkIcon.innerHTML = "+";
+        checkIcon.innerHTML = "<i class='fas fa-check'></i>";
         mainContainer.appendChild(checkIcon);
 
         const trashIcon = document.createElement("button");
         trashIcon.classList.add("trash-btn");
-        trashIcon.innerHTML = "-";
+        trashIcon.innerHTML = "<i class='fas fa-trash'></i>";
 
         mainContainer.appendChild(trashIcon);
         mainContainer.style.display = "flex";
